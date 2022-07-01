@@ -297,3 +297,10 @@
 // }
 //
 // func(`www`)
+const multiply = (a) => {
+    for (let i = 1; i < 101; i++) {
+        result=a*i
+        console.log(`${a} * ${i} =${result}`)
+    }
+}
+multiply(23)
