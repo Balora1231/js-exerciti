@@ -413,9 +413,98 @@ console.log(bigest(13, 2));*/
 //⦁	Scrieți o funcție pow (x, n) care returnează x la puterea lui n.
 // Cu alte cuvinte, multiplica x de la sine n de ori și returnează rezultatul.
 
+/*
 const power = (x,n) => {
 let result= Math.pow(x,n)
    return `  ${x} * ${n} =${result}`
 
 }
-console.log(power(11, 100));
+console.log(power(11, 100));*/
+
+// Creați o funcție de multiplicare care va lua orice număr de numere și va returna produsul
+// lor: multiply(1,2,3) = 6 (1*2*3); Dacă nu există niciun argument, întoarceți zero: multiply() // 0
+
+/*function multiply() {
+   sum = 1;
+   if (arguments.length > 0) {
+      for (let i = 0; i < arguments.length; i++) {
+         sum *= arguments[i];
+      }
+      console.log(sum);
+   } else console.log(0);
+}*/
+//Creati o functie care va primi un parametru de tip string si va returna textu intors: reverseString(‘test’) // “tset”.
+/*function reversString(str) {
+   let arr = str.split("");
+   console.log(arr.reverse().join(""));
+   reversString("Hello world!");
+}*/
+
+/*
+
+//Creați o funcție care un argument de tip string si va returna un sir de caractere  separate printr- un spațiu și înlocuit cu valoarea Unicode al caracterului:
+// getCodeStringFromText(‘hello’) // “104 101 108 108 111” 
+// Indiciu: apasati aici
+function getCodeStringFromText(str) {
+    let arr = str.split("");
+    let arr2 = [];
+    for (let i = 0; arr.length > i; i++) {
+        arr2.push(str.charCodeAt(i));
+    }
+    console.log(arr2.join(" "));
+}
+
+getCodeStringFromText("hello world!");
+
+//Creați o funcție ghiciți numărul. Este nevoie de un număr de la 1-10 (asigurați-vă că nu este mai mare
+decat 10 și mai mic decat 0). Generează un număr random de la 1-10 și  compară cu numărul transmis dacă se potrivesc, apoi returnează
+„Ați câștigat” dacă nu atunci „Nu ați ghicit numărul dvs. Este  8, dar numărul 5 a fost selectat”.
+function randomNumber(x) {
+    let y = Math.floor(Math.random() * 10 + 1);
+    if (!isNaN(x) && x > 0 && x < 11) {
+        if (x === y) {
+            console.log("Вы выиграли");
+        } else {
+            console.log(`Вы не угадали ваше число ${x} а выпало число ${y}`);
+        }
+    }
+}
+
+randomNumber(1);
+
+
+//Creati o functie care primeste ca parametru un numar “n” si
+returneaza un ciclu de 10 ori incepand cu cifra primita in argument
+function getArray(x) {
+    let arr = [];
+    for (let i = 0; i < x; i++) {
+        arr.push(i + 1);
+    }
+    console.log(arr);
+}
+getArray(10);
+
+//Faceți o funcție care va lua 2 numere și returnați-le cel mai mic multiplu comun.
+Cel mai mic numar  care este împărțit la unul și al doilea număr.
+Exemplu: numerele 12 și 15. Numărul 60 este împărțit la 12 și 15 și acesta este cel mai mic număr.
+
+
+
+
+
+
+
+//7. Creati o functie piramida, functia va scoate in consola urmatoare:
+function generatePyramid() {
+   let totalNumberofRows = 9;
+   let output = '';
+   for (let i = 1; i <= totalNumberofRows; i++) {
+      for (let j = 1; j <= i; j++) {
+         output += j + '  ';
+      }
+      console.log(output);
+      output = '';
+   }
+}
+
+generatePyramid();*/
